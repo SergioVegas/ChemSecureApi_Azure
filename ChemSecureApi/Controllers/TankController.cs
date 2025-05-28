@@ -22,8 +22,7 @@ namespace ChemSecureApi.Controllers
         /// <summary>
         /// Retrieves a list of all t tanks in the database.
         /// </summary>
-        /// <returns>A list of all tanks</returns>
-        [Authorize(Roles = "Admin")]
+        /// <returns>A list of all tanks</returns>   
         [HttpGet("")]
         public async Task<ActionResult<IEnumerable<Tank>>> GetTanks()
         {
